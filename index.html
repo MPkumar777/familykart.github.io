@@ -1,94 +1,207 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Family Kart</title>
-    <style>
 
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-        }
+<meta charset="UTF-8">
 
-        body{
-            height:100vh;
-            background:#111;
-            font-family:Arial,sans-serif;
-        }
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        .hero{
-            height:100vh;
-            background:url('https://images.unsplash.com/photo-1511707171634-5f897ff02aa9');
-            background-size:cover;
-            background-position:center;
+<title>Family Kart Australia</title>
 
-            display:flex;
-            justify-content:center;
-            align-items:center;
-        }
+<style>
 
-        .overlay{
-            background:rgba(0,0,0,0.65);
-            width:100%;
-            height:100%;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
 
-            display:flex;
-            flex-direction:column;
-            justify-content:center;
-            align-items:center;
+body{
+background:#000;
+color:white;
+overflow-x:hidden;
+}
 
-            text-align:center;
-            color:white;
-        }
+video{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+object-fit:cover;
+z-index:-2;
+}
 
-        h1{
-            font-size:60px;
-            margin-bottom:15px;
-        }
+.overlay{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.65);
+z-index:-1;
+}
 
-        p{
-            font-size:24px;
-            margin-bottom:40px;
-        }
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
 
-        a{
-            text-decoration:none;
-            background:#E31E24;
-            color:white;
-            padding:15px 30px;
-            margin:10px;
-            border-radius:30px;
-            display:inline-block;
-        }
+.logo{
+width:180px;
+margin-bottom:20px;
+border-radius:50%;
+}
 
-    </style>
+h1{
+font-size:60px;
+margin-bottom:10px;
+}
+
+.subtitle{
+font-size:24px;
+margin-bottom:30px;
+}
+
+.btn{
+background:#e31e24;
+padding:15px 35px;
+color:white;
+text-decoration:none;
+border-radius:30px;
+font-size:18px;
+font-weight:bold;
+}
+
+.btn:hover{
+opacity:0.9;
+}
+
+.social{
+margin-top:30px;
+}
+
+.social a{
+color:white;
+text-decoration:none;
+margin:0 15px;
+font-size:18px;
+}
+
+.features{
+background:#111;
+padding:60px 20px;
+text-align:center;
+}
+
+.cards{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+margin-top:30px;
+}
+
+.card{
+background:#1b1b1b;
+padding:20px;
+width:250px;
+border-radius:12px;
+}
+
+@media(max-width:768px){
+
+h1{
+font-size:38px;
+}
+
+.subtitle{
+font-size:18px;
+}
+
+.logo{
+width:120px;
+}
+
+}
+
+</style>
+
 </head>
 
 <body>
 
-<div class="hero">
+<video autoplay muted loop playsinline>
+<source src="familykart.mp4" type="video/mp4">
+</video>
 
-    <div class="overlay">
+<div class="overlay"></div>
 
-        <h1>WELCOME TO FAMILY KART</h1>
+<section class="hero">
 
-        <p>Everything for Your Family & Home</p>
+<img src="logo.png" class="logo">
 
-        <a href="https://www.ebay.com/usr/YOUR_EBAY_USERNAME" target="_blank">
-            Visit eBay Store
-        </a>
+<h1>FAMILY KART</h1>
 
-        <a href="https://instagram.com/YOUR_INSTAGRAM" target="_blank">
-            Instagram
-        </a>
+<p class="subtitle">
+Quality Tech Accessories • Fast Shipping Australia Wide
+</p>
 
-        <a href="https://facebook.com/YOUR_PAGE" target="_blank">
-            Facebook
-        </a>
+<a class="btn"
+href="https://www.ebay.com.au/str/familykartaus"
+target="_blank">
 
-    </div>
+Visit Our eBay Store
+
+</a>
+
+<div class="social">
+
+<a href="YOUR_INSTAGRAM_LINK">Instagram</a>
+
+<a href="YOUR_FACEBOOK_LINK">Facebook</a>
 
 </div>
 
+</section>
+
+<section class="features">
+
+<h2>What We Offer</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Phone Accessories</h3>
+<p>Cases, chargers, cables and more.</p>
+</div>
+
+<div class="card">
+<h3>Computer Accessories</h3>
+<p>USB hubs, adapters and peripherals.</p>
+</div>
+
+<div class="card">
+<h3>Charging Solutions</h3>
+<p>Fast chargers and power banks.</p>
+</div>
+
+<div class="card">
+<h3>Audio Accessories</h3>
+<p>Earbuds, headphones and accessories.</p>
+</div>
+
+</div>
+
+</section>
+
 </body>
+
 </html>
